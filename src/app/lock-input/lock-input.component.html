@@ -1,0 +1,7 @@
+<small>Should be locked: </small>
+<mat-icon
+  [ngClass]="{ 'disabled-control': disabled }"
+  (click)="setValue()"
+  fontIcon="lock"
+></mat-icon>
+<p>{{ value ? "Locked" : "Not Locked" }}</p>
